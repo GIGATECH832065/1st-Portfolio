@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Doc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        .fade-in-delay {
+            opacity: 0;
+            animation: fadeIn 0.6s ease-out 0.3s forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4">
+
+    <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold mb-6">Techniques Used GIGATECH1 Portfolio</h1>
+
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">1. HTML Structure</h2>
+            <p>The website is composed of two primary pages:</p>
+            <ul class="list-disc list-inside">
+                <li>index.html: Serves as the magazine cover page.</li>
+                <li>article.html: Contains the featured article on vanilla HTML relevance.</li>
+            </ul>
+            <p>The structure follows semantic HTML principles, utilizing elements such as:</p>
+            <ul class="list-disc list-inside">
+                <li>&lt;header&gt; for navigation.</li>
+                <li>&lt;main&gt; for the primary content.</li>
+                <li>&lt;section&gt; to group related content.</li>
+                <li>&lt;footer&gt; for copyright and branding details.</li>
+            </ul>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">2. CSS Styling</h2>
+            <div class="ml-4">
+                <h3 class="font-semibold mb-1">a. Tailwind CSS for Styling</h3>
+                <p>The website uses Tailwind CSS for styling through a CDN link:</p>
+                <pre class="bg-gray-200 p-2 rounded-md">&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</pre>
+                <p>Tailwind provides utility classes for:</p>
+                <ul class="list-disc list-inside">
+                    <li>Responsive layout (max-w-7xl mx-auto px-4)</li>
+                    <li>Typography (text-4xl font-bold text-gray-900)</li>
+                    <li>Flexbox and grid systems (flex justify-between items-center)</li>
+                    <li>Color and effects (bg-white/80 backdrop-blur-md)</li>
+                </ul>
+            </div>
+            <div class="ml-4">
+                <h3 class="font-semibold mb-1">b. Custom CSS Animations</h3>
+                <p>Two custom animations are defined using @keyframes to provide a smooth fade-in effect:</p>
+                <pre class="bg-gray-200 p-2 rounded-md">@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}</pre>
+                <pre class="bg-gray-200 p-2 rounded-md">.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+.fade-in-delay {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out 0.3s forwards;
+}</pre>
+                <p>These animations enhance user experience by making elements appear smoothly as the page loads.</p>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">3. Navigation and Linking</h2>
+            <p>A fixed navigation bar ensures users can access key pages at all times.</p>
+            <p>Internal links (&lt;a href="article.html"&gt;) allow seamless navigation between pages.</p>
+            <p>The contact link uses a mailto: scheme to open an email client:</p>
+            <pre class="bg-gray-200 p-2 rounded-md">&lt;a href="mailto:giga832065@gmail.com?subject=Magazine"&gt;CONTACT&lt;/a&gt;</pre>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">4. Image and Background Effects</h2>
+            <p>The magazine cover page (index.html) features a background image with a dark overlay achieved using CSS blending:</p>
+            <pre class="bg-gray-200 p-2 rounded-md">&lt;div class="absolute inset-0 bg-black/30 mix-blend-multiply"&gt;&lt;/div&gt;</pre>
+            <p>This technique enhances text readability over images.</p>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">5. Static Content Without JavaScript Dependencies</h2>
+            <p>No JavaScript frameworks or libraries were used.</p>
+            <p>All animations and interactive effects are achieved purely with CSS.</p>
+            <p>The HTML is fully responsive using Tailwind’s utility classes.</p>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">Conclusion</h2>
+            <p>The GIGATECH1 magazine website demonstrates how modern, visually appealing, and efficient web pages can be built exclusively with vanilla HTML and CSS. By leveraging Tailwind CSS, custom animations, and well-structured semantic HTML, this site achieves high performance, security, and ease of maintenance without relying on complex frameworks or CMS platforms.</p>
+        </div>
+    </div>
+
+</body>
+</html>

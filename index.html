@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian R Wilson Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        .fade-in-delay {
+            opacity: 0;
+            animation: fadeIn 0.6s ease-out 0.3s forwards;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-white">
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold tracking-tighter text-red-600">BRW PORTFOLIO</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="mailto:giga832065@gmail.com?subject=Magazine" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">
+                        CONTACT
+                    </a>
+                    <button class="text-sm font-medium text-gray-700 hover:text-black transition-colors">HOME</button>
+		    <a href="aboutme.html" class="text-sm font-medium text-gray-700 hover:text-black transition-colors" target="_blank">ABOUT ME</a>
+                    <a href="techdoc.html" class="text-sm font-medium text-gray-700 hover:text-black transition-colors" target="_blank">TECH DOC</a>
+                    <a href="GTProj/index.html" class="text-sm font-medium text-gray-700 hover:text-black transition-colors" target="_blank">MY WORK</a>
+		   <a href="Disclaimer.html" class="text-sm font-medium text-gray-700 hover:text-black transition-colors" target="_blank">DISCLAIMER</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-16">
+        <div class="relative h-screen fade-in">
+            <div class="absolute inset-0">
+                <img src="me.png" alt="Cover" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-black/30 mix-blend-multiply"></div>
+            </div>
+
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-end pb-24">
+                <div class="space-y-4 fade-in-delay">
+                    <a href="article.html" class="inline-block bg-red-600 px-4 py-1 text-white text-sm font-medium hover:bg-red-700 transition" target="_blank">
+                        COVER STORY
+                    </a>
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight max-w-4xl">
+                        The Timeless Relevance of Vanilla HTML Websites in 2025
+                    </h1>
+                    <p class="text-xl text-white/100 max-w-2xl">
+                        Vanilla HTML websites remain a relevant and practical choice in 2025, offering businesses speed, security, cost-effectiveness, and reliability without the complexities of modern web frameworks and CMS platforms.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="group cursor-pointer fade-in">
+                        <div class="text-sm font-bold text-red-600 mb-2">
+    			<a href="giveaway/index.html" target="_blank" rel="noopener noreferrer" class="hover:underline">
+			WANT A FREE WEBSITE??
+		        </div>
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-red-600 transition-colors">
+    			<a href="giveaway/index.html" target="_blank" rel="noopener noreferrer" class="hover:underline">
+        		Like & Follow Us and win!!
+   			</a>
+			</h3>
+                    </div>
+                    <div class="group cursor-pointer fade-in">
+                        <div class="text-sm font-medium text-red-600 mb-2">CULTURE</div>
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-red-600 transition-colors">
+                            When Algorithms Meet Artistry
+                        </h3>
+                    </div>
+                    <div class="group cursor-pointer fade-in">
+                        <div class="text-sm font-medium text-red-600 mb-2">SCIENCE</div>
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-red-600 transition-colors">
+                            Inside the AI Art Revolution
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-8 bg-white border-t border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center text-sm text-gray-500">
+                    <div>MARCH 2025 ISSUE © 2025 GIGATECH1. All rights reserved.</div>
+		    <div><a href="http://www.gt1blog.tech/" target="_blank" class="text-blue-500 hover:underline">GIGATECH1 BLOG</a></div>
+                    <div>GIGATECH1.COM</div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
